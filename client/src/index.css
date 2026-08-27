@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Fonts ─────────────────────────────────────────────────── */
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* ── Headings — Bangers game font ──────────────────────────── */
+h1, h2, h3, h4 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 0.04em;
+}
+
+h1 { font-size: 2.4rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.4rem; }
+
+.font-game {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 0.05em;
+}
+
+/* ── Cards — square corners + dark hard shadow ─────────────── */
+.card {
+  border-radius: 0 !important;
+  border: 2px solid #1a1a1a;
+  box-shadow: 4px 4px 0 #1a1a1a;
+  transition: box-shadow 80ms, transform 80ms;
+}
+
+.card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 #1a1a1a;
+}
+
+/* ── Buttons — square + hard shadow press effect ───────────── */
+.btn {
+  border-radius: 0 !important;
+  font-family: 'Bangers', cursive !important;
+  font-size: 1.1rem !important;
+  letter-spacing: 0.08em;
+  border: 2px solid #1a1a1a !important;
+  box-shadow: 3px 3px 0 #1a1a1a;
+  transition: box-shadow 60ms, transform 60ms;
+}
+
+.btn:hover:not(:disabled) {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 #1a1a1a;
+}
+
+.btn:active:not(:disabled) {
+  transform: translate(3px, 3px);
+  box-shadow: none !important;
+}
+
+/* ── Badges — square ───────────────────────────────────────── */
+.badge {
+  border-radius: 0 !important;
+  font-family: 'Bangers', cursive;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  border: 1.5px solid #1a1a1a;
+}
+
+/* ── Inputs — square + colored focus ring ──────────────────── */
+.input, .textarea, .select {
+  border-radius: 0 !important;
+  border: 2px solid #1a1a1a !important;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+}
+
+.input:focus, .textarea:focus, .select:focus {
+  outline: none !important;
+  border-color: #0057e7 !important;
+  box-shadow: 3px 3px 0 #0057e7 !important;
+}
+
+/* ── Navbar bottom border ──────────────────────────────────── */
+.navbar {
+  border-bottom: 3px solid #1a1a1a;
+  box-shadow: 0 3px 0 #1a1a1a;
+}
+
+/* ── Dropdown / menu ───────────────────────────────────────── */
+.dropdown-content,
+.modal-box {
+  border-radius: 0 !important;
+  border: 2px solid #1a1a1a;
+  box-shadow: 4px 4px 0 #1a1a1a;
+}
+
+/* ── Table hover ───────────────────────────────────────────── */
+.table tr:hover td {
+  background: #f0f4ff !important;
+}

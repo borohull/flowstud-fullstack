@@ -1,0 +1,35 @@
+# Dependencies
+/client/node_modules
+/server/vendor
+/server/node_modules
+
+# Build output
+/client/dist
+/server/public/build
+/server/public/hot
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Database
+*.sqlite
+*.sqlite-journal
+
+# Laravel runtime
+/server/storage/*.key
+/server/storage/logs/*.log
+/server/storage/framework/cache/data/*
+/server/storage/framework/sessions/*
+/server/storage/framework/views/*
+/server/bootstrap/cache/*.php
+
+# Logs
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
